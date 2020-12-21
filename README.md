@@ -96,6 +96,7 @@ Initial idea was to find a equation that increases a cost when a distance in Fre
 In this purpose, any function that could be similar to Gaussian distribution fits very well. So I picked below equation which is `0 <= Y <= 1`.
 
 <img src="pics/cost_distance_equation_1.jpg" />
+
 __Equation 1.__
 
 This cost function exactly gives me what I wanted, but it doesn't works well in certain situations. Let's look at below figure. My car is Red one and there are three other green cars on different lane. 
@@ -111,9 +112,10 @@ Since our state transition chooses the state with the minimum cost, it is decide
 Thus, this equation was modified to consider whether car is behind or ahead of my car and introduced new equation as shown below.
 
 <img src="pics/cost_distance_equation_2.jpg" />
+
 __Equation 2.__
 
-Now for new equation let's consider same example which talked above. Generally, it behaves exactly what I expected and it choose right state __PrepareLaneChangeRight__ with minimum cost. 
+For new equation let's consider same example which talked above. Generally, it behaves exactly what I expected and it choose right state __PrepareLaneChangeRight__ with minimum cost. 
 For project, the Equation 2 is implemented.
 
 <img src="pics/cost_distance_2.jpg" />
