@@ -56,7 +56,7 @@ def Predict(observations, prev_size)
 
 ## 2. Behavior Planning
 
-The behavior planning's main role is to choose a next state with the minimum cost from all possible next states. It is called State transition that has two main components: __Finite State Machine__ and __Cost Calculation__.
+The behavior planning's main role is to choose a optimal state with the minimum cost from all possible next states. It is called State transition that has two main components: __Finite State Machine__ and __Cost Calculation__.
 
 #### Behavior planning or State transition steps:
 * Find successor states for current state (Finite State Machine). Basically, each state represents one of lanes. For example, state KeepLane is current lane where my car is on and LaneChangeLeft is left hand side's lane etc...
