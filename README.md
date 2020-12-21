@@ -92,14 +92,14 @@ def CalculateCost(car_s, car_speed, state, predictions)
 ```
 
 ### 2.2.1 Cost function for distance
-Initial idea was to find a equation that increases a cost when a distance in Frenet coordinates between a observed car and my car gets shorter or decreases the cost when distance increases .
+Initial idea was to find a mathematical equation that increases a cost when a distance in Frenet coordinates between a observed car and my car gets shorter or decreases the cost when distance increases .
 In this purpose, any function that could be similar to Gaussian distribution fits very well. So I picked below equation which is `0 <= Y <= 1`.
 
 <img src="pics/cost_distance_equation_1.jpg" />
 
 __Equation 1.__
 
-This cost function exactly gives me what I wanted, but it doesn't works well in certain situations. Let's look at below figure. My car is Red one and there are three other green cars on different lane. 
+This equation for cost gives me what I wanted, but it doesn't works well in certain situations. Let's look at below figure. My car is Red one and there are three other green cars on different lane. 
 * Distance to __Car 1__ is 5m 
 * Distance to __Car 2__ is -5m 
 * Distance to __Car 0__ is 7m
