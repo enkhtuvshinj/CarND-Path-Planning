@@ -109,7 +109,7 @@ Since our state transition chooses the state with the minimum cost, it is decide
 
 <img src="pics/cost_distance_1.jpg" />
 
-Thus, this equation was modified to consider whether car is behind or ahead of my car and introduced new equation as shown below.
+Thus, __Equation 1__ was modified to consider whether car is behind or ahead of my car and introduced new equation as shown below.
 
 <img src="pics/cost_distance_equation_2.jpg" />
 
