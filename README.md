@@ -91,7 +91,7 @@ def CalculateCost(car_s, car_speed, state, predictions)
   return max(costs)
 ```
 
-### 2.2.1 Cost function for distance in Frenet coordinates
+### 2.2.1 Cost function for distance
 Initial idea was to find a equation that increases a cost when a distance in Frenet coordinates between a observed car and my car gets shorter or decreases the cost when distance increases .
 In this purpose, any function that could be similar to Gaussian distribution fits very well. So I picked below equation which is `0 <= Y <= 1`.
 
@@ -120,7 +120,7 @@ For project, the Equation 2 is implemented.
 
 <img src="pics/cost_distance_2.jpg" />
 
-### 2.2.2 Cost function for speed ratio
+### 2.2.2 Cost function for speed
 Even Equation 2 works well in terms of distance to observed car, it has also some drawbacks. The Equation 2 doesn't consider speed of observed car. 
 Let's imagine that __Car 2__ is going faster than my car and then my car tries to get in front of that car. The most probably, fast car would hit my car or driver of that car tries a jerky stop.
 It is really bad situation to jeopardizing life of passengers in both cars. This is why we need another cost function to consider speed of cars.
