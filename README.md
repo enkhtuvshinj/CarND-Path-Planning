@@ -8,7 +8,7 @@ The car's localization and sensor fusion data are given, there is also a sparse 
 ---
 ## Dependencies & running code
 
-For the detailed instructions, please look at [INSTRUCTIONS](./INSTRUCTIONS.md). Also for more information about sensor fusion data, click [here](./SENSOR.md)
+For the detailed running instructions, please look at [INSTRUCTIONS](./INSTRUCTIONS.md). Also for more information about sensor fusion data from a simulation, click [here](./SENSOR.md)
 
 ---
 ## Highway Path Planning Algorithm
