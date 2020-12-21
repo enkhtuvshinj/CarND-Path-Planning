@@ -3,7 +3,7 @@ Self-Driving Car Engineer Nanodegree Program
 
 ---
 In this project implemented a path planner to safely navigate around a virtual highway with other traffic that is driving +-10 MPH of the 50 MPH speed limit. 
-The car's localization and sensor fusion data are given, there is also a sparse map list of waypoints around the highway. 
+The car's localization and sensor fusion data comes fom a [car simulation](https://github.com/udacity/self-driving-car-sim/releases/tag/T3_v1.2), there is also a sparse map list of waypoints around the highway. 
 
 ---
 ## Dependencies & running code
