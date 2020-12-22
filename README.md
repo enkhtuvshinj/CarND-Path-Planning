@@ -123,7 +123,7 @@ For this project, the Equation 2 is implemented.
 
 ### 2.2.2 Cost function for speed
 Even __Equation 2__ works well in terms of distance to observed car, it has also some drawbacks. The Equation 2 doesn't consider speed of observed car. 
-Let's imagine that __Car 2__ is going faster than ego car, and then ego car tries to get in front of that car. The most probably, a collision would occur.
+Let's imagine that __Car 2__ is going faster than ego car, and then the ego car tries to get in front of that car. The most probably, a collision would occur.
 In real life, it is really bad situation to jeopardizing life of passengers in both cars. This is why we need another cost function to consider speed of cars.
 Requirements of this cost function is like:
 
@@ -152,7 +152,7 @@ Now let's insert new cost into above example. Assume that:
 * __Car 1__'s speed is 35mph
 * __Car 2__'s speed is 50mph
 
-Due to newly-introduced cost, a total cost of `PrepareLaneChangeLeft` increase by 0.124 and a total cost of `PrepareLaneChangeRight` raises by 0.247. For `KeepLane` state, its cost didn't change because of same speed for both ego car and __Car 0__.
+Due to newly-introduced cost, a total cost of `PrepareLaneChangeLeft` and `PrepareLaneChangeRight` increases respectively by 0.124 and 0.247, whereas `KeepLane` cost doesn't change because of same speed for both ego car and __Car 0__.
 Since `KeepLane` state cost is the lowest, it is decided to stay on current lane.
 
 <img src="pics/cost_speed_3.jpg" />
