@@ -152,7 +152,7 @@ Now let's insert new cost into above example. Assume that:
 * __Car 1__'s speed is 35mph
 * __Car 2__'s speed is 50mph
 
-Due to newly-introduced cost, a total cost of `PrepareLaneChangeLeft` and `PrepareLaneChangeRight` increases respectively by 0.124 and 0.247, whereas `KeepLane` cost doesn't change because of same speed for both ego car and __Car 0__.
+As shown in below figure, due to newly-introduced cost a total cost of `PrepareLaneChangeLeft` and `PrepareLaneChangeRight` increases respectively by 0.124 and 0.247, whereas `KeepLane` cost doesn't change because of same speed for both ego car and __Car 0__.
 Since `KeepLane` state cost is the lowest, it is decided to stay on current lane.
 
 <img src="pics/cost_speed_3.jpg" />
