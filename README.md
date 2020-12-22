@@ -137,11 +137,11 @@ For ahead cars:
 
 From above requirements, sine function (-pi/2<x<pi/2) looks very good choice.
 
-For behind cars `distance < -2` (safe distance is 2m):
+For behind cars __`if distance < -2`__ (safe distance is 2m):
 
 <img src="pics/cost_speed_1.jpg" />
 
-For ahead cars `distance => 0`:
+For ahead cars __`if distance => 0`__:
 
 <img src="pics/cost_speed_2.jpg" />
 
