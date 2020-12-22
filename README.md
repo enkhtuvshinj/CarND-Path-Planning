@@ -8,7 +8,7 @@ The car's localization and sensor fusion data comes fom a [car simulation](https
 ---
 ## Dependencies & running code
 
-For the detailed running instructions, please look at [INSTRUCTIONS](./INSTRUCTIONS.md). Also for more information about sensor fusion data from a simulation, click [here](./SENSOR.md)
+For the detailed running instructions, please look at [instructions](./INSTRUCTIONS.md). Also for more information about sensor fusion data from a simulation, click [here](./SENSOR.md).
 
 ---
 ## Highway Path Planning Algorithm
@@ -28,7 +28,7 @@ The following is key steps of the path planning algorithm:
 ## 1. Prediction
 
 In this project, predicting a lane change of other cars may be not useful since a road is circular highway. So machine learning (data-driven) technique was not implemented, but model-based approach.
-Every 0.02s from the car simulator the path planning application gets new sensor fusion data including car's unique ID, car's x position in map coordinates, car's y position in map coordinates, car's x velocity in m/s, car's y velocity in m/s, car's s position in frenet coordinates, car's d position in frenet coordinates. 
+Every 0.02s the path planning application receives new [sensor fusion data](./SENSOR.md) from the car simulator. 
 For sake of simplicity, the prediction algorithm computes positions of an observed cars in future only based on assumption of constant speed it has. It predicts car's S positions in frenet coordinates for three consecutive time steps that are required by a lane change (KeepLane -> PrepareLaneChangeLeft -> ChangeLeft).
 
 ```
