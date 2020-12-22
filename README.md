@@ -116,8 +116,8 @@ Thus, __Equation 1__ was modified to consider whether car is behind or ahead of 
 
 __Equation 2.__
 
-Condition `x < -4` tells that a cost decreases if an observed car is at least 4m far away from ego car. Generally, 4m is safe distance (in my opinion). However, we can increase or decrease it.
-For new equation let's consider same example which talked above. Generally, it behaves exactly what I expected and it choose a state __PrepareLaneChangeRight__ because it has the minimum cost. 
+Condition `x < -4` tells that a cost decreases if an observed car is at least 4m far away behind ego car. Generally, 4m is safe distance (we can increase or decrease it).
+For new equation let's consider same example which talked above. As illustrated in below figure, a state __PrepareLaneChangeRight__ is chosen because it has the minimum cost. 
 For this project, the Equation 2 is implemented.
 
 <img src="pics/cost_distance_2.jpg" />
