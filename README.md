@@ -152,14 +152,14 @@ Now let's insert new cost into above example. Assume that:
 * __Car 1__'s speed is 35mph
 * __Car 2__'s speed is 50mph
 
-Due to newly-introduced cost, a total cost of `PrepareLaneChangeLeft` increase by 0.124 and a total cost of `PrepareLaneChangeRight` raises by 0.247. For `KeepLane` state, its cost didn't change because of same speed for both my car and __Car 0__.
+Due to newly-introduced cost, a total cost of `PrepareLaneChangeLeft` increase by 0.124 and a total cost of `PrepareLaneChangeRight` raises by 0.247. For `KeepLane` state, its cost didn't change because of same speed for both ego car and __Car 0__.
 Since `KeepLane` state cost is the lowest, it is decided to stay on current lane.
 
 <img src="pics/cost_speed_3.jpg" />
 
 ## 3. Trajectory
 
-Trajectory implementation by instructor was used because it was well designed and implemented. 
+Trajectory implementation by instructor was used because it was well designed and coded. 
 Basically, the trajectory generates 50 points along waypoints based on the given lane of highway using [spline](https://kluge.in-chemnitz.de/opensource/spline/) library.
 The following is Trajectory pseudo code:
 
